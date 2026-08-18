@@ -1,0 +1,16 @@
+DOSSIER PHOTOS
+==============
+Déposez ici vos photos originales, puis ouvrez assets/site.js
+et remplacez les URL du bloc PHOTOS en haut du fichier par :
+
+  "images/villa01-01.jpg"
+
+Ordre attendu pour chaque villa (6 photos) :
+  0 : photo de couverture (extérieur / piscine)
+  1 : séjour
+  2 : piscine
+  3 : cuisine ou pièce de vie
+  4 : chambre principale
+  5 : seconde chambre
+
+Format conseillé : JPG, 1600 px de large maximum, moins de 400 Ko par image.

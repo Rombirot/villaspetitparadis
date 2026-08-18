@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Villas Petit Paradis, Ollioules</title>
+<meta name="description" content="Une question sur nos villas avec piscine à Ollioules ? Écrivez-nous, nous répondons dans l'heure. Séjours longue durée et demandes particulières bienvenus.">
+<link rel="canonical" href="https://villas-petitparadis.fr/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo">Villas Petit Paradis</a>
+  <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav__links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="villa-01.html">Villa 01</a></li>
+    <li><a href="villa-02.html">Villa 02</a></li>
+    <li><a href="la-region.html">La Région</a></li>
+    <li><a href="contact.html" aria-current="page">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="section" style="padding-top:9rem">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <span class="eyebrow">Restons en contact</span>
+      <h2>Une question ?<br>Un <em>séjour sur mesure</em> ?</h2>
+      <p>Séjour longue durée, arrivée tardive, demande particulière : écrivez-nous, nous répondons généralement dans l'heure.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+
+          <div class="form__row">
+            <div>
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div>
+              <label for="villa">Villa concernée</label>
+              <select id="villa" name="villa">
+                <option>Indifférent</option>
+                <option>Petit Paradis - Villa 01</option>
+                <option>Petit Paradis - Villa 02</option>
+                <option>Les deux villas</option>
+              </select>
+            </div>
+            <div>
+              <label for="dates">Dates envisagées</label>
+              <input type="text" id="dates" name="dates" placeholder="ex. 12 au 19 juillet">
+            </div>
+          </div>
+
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Envoyer le message</button>
+          <p class="form__note">Vos données sont utilisées uniquement pour répondre à votre demande et ne sont jamais transmises à des tiers.</p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <ul class="info-list">
+          <li><span class="label">Email</span><span class="value">contact@villas-petitparadis.fr</span></li>
+          <li><span class="label">Téléphone</span><span class="value">[à compléter]</span></li>
+          <li><span class="label">Délai de réponse</span><span class="value">Généralement dans l'heure</span></li>
+          <li><span class="label">Localisation</span><span class="value">Ollioules (83190), Var</span></li>
+          <li><span class="label">Instagram</span><span class="value"><a href="https://www.instagram.com/villaspetitparadis/" target="_blank" rel="noopener" style="text-decoration:none;border-bottom:1px solid var(--terracotta)">@villaspetitparadis</a></span></li>
+          <li><span class="label">Réservation en ligne</span><span class="value"><a href="villa-01.html" style="text-decoration:none;border-bottom:1px solid var(--terracotta)">Voir les disponibilités</a></span></li>
+        </ul>
+
+        <div style="margin-top:2.5rem;padding:1.8rem;background:var(--sable)">
+          <h4 style="font-size:1.3rem;margin-bottom:.7rem">Bon à savoir</h4>
+          <p style="font-size:.92rem;color:var(--gris);font-weight:300">Les calendriers et tarifs sont mis à jour en temps réel sur nos annonces en ligne. Pour un séjour de plus de deux semaines ou hors saison, contactez-nous directement : nous étudions chaque demande.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <span class="footer__logo">Villas Petit Paradis</span>
+      <p>Deux villas d'exception entre Ollioules et Sanary-sur-Mer, pour redécouvrir la Provence loin du tumulte.</p>
+    </div>
+    <div>
+      <h5>Les villas</h5>
+      <ul>
+        <li><a href="villa-01.html">Villa 01</a></li>
+        <li><a href="villa-02.html">Villa 02</a></li>
+        <li><a href="la-region.html">La région</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Informations</h5>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="mentions-legales.html#donnees">Données personnelles</a></li>
+      </ul>
+      <h5 style="margin-top:1.8rem">Suivez-nous</h5>
+      <a href="https://www.instagram.com/villaspetitparadis/" target="_blank" rel="noopener" class="social" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>@villaspetitparadis</span>
+      </a>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <p>© <span data-year></span> Villas Petit Paradis · Ollioules (83190), Var, Provence-Alpes-Côte d'Azur</p>
+    <p>Meublés de tourisme déclarés en mairie · N° d'enregistrement : <em>[à compléter]</em></p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
