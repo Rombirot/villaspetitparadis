@@ -239,19 +239,19 @@ h2 em,h1 em,h3 em{font-style:italic;color:var(--terracotta)}
     border-bottom:1px solid rgba(184,84,58,.2);box-shadow:0 2px 14px rgba(42,37,32,.1)}
   .nav__logo{font-size:1.22rem}
   .nav__burger{display:flex}
-  .nav__links{position:fixed;top:0;right:0;bottom:0;width:min(82vw,340px);
+  .nav__links{position:fixed;top:4.3rem;right:1.1rem;bottom:auto;width:auto;min-width:186px;
     background-color:#2a2520;background-image:linear-gradient(160deg,#332c26,#211d19);
-    flex-direction:column;justify-content:center;align-items:flex-start;padding:0 2.2rem;gap:0;
-    transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);
-    box-shadow:-24px 0 70px rgba(20,17,14,.5);z-index:250}
-  .nav__links.is-open{transform:translateX(0)}
-  .nav__links li{width:100%;border-bottom:1px solid rgba(244,234,216,.12)}
+    flex-direction:column;align-items:stretch;padding:.4rem 1.3rem;gap:0;border-radius:4px;
+    opacity:0;visibility:hidden;transform:translateY(-10px);transform-origin:top right;
+    transition:opacity .25s ease,transform .25s cubic-bezier(.4,0,.2,1),visibility .25s;
+    box-shadow:0 18px 50px rgba(20,17,14,.42);z-index:250}
+  .nav__links.is-open{opacity:1;visibility:visible;transform:translateY(0)}
+  .nav__links li{border-bottom:1px solid rgba(244,234,216,.11)}
   .nav__links li:last-child{border-bottom:0}
-  .nav__links a{display:block;width:100%;padding:1.15rem 0;font-size:1rem;letter-spacing:.14em;color:#faf6ed}
+  .nav__links a{display:block;padding:.92rem .2rem;font-size:.82rem;letter-spacing:.14em;color:#faf6ed;white-space:nowrap}
   .nav__links a:hover{color:var(--ocre)}
   .nav__links a[aria-current="page"]{color:var(--ocre)}
-  .nav__links a[aria-current="page"]::before{content:'— ';color:var(--ocre)}
-  .nav::after{content:'';position:fixed;inset:0;background:rgba(42,37,32,.45);opacity:0;visibility:hidden;
+  .nav::after{content:'';position:fixed;inset:0;background:rgba(42,37,32,.28);opacity:0;visibility:hidden;
     transition:opacity .35s,visibility .35s;z-index:200}
   .nav.is-open::after{opacity:1;visibility:visible}
   .villas-grid,.villa-intro,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
