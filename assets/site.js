@@ -40,17 +40,19 @@ document.querySelectorAll("[data-photo]").forEach(el => {
 const burger = document.querySelector(".nav__burger");
 const links = document.querySelector(".nav__links");
 if (burger && links) {
-  burger.addEventListener("click", () => {
-    const open = links.classList.toggle("is-open");
+  const nav = document.querySelector(".nav");
+  const setMenu = open => {
+    links.classList.toggle("is-open", open);
     burger.classList.toggle("is-open", open);
+    nav.classList.toggle("is-open", open);
     burger.setAttribute("aria-expanded", String(open));
     document.body.style.overflow = open ? "hidden" : "";
-  });
-  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-    links.classList.remove("is-open");
-    burger.classList.remove("is-open");
-    document.body.style.overflow = "";
-  }));
+  };
+  burger.addEventListener("click", () => setMenu(!links.classList.contains("is-open")));
+  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+  // Fermeture au clic sur le voile ou à la touche Échap
+  nav.addEventListener("click", e => { if (e.target === nav) setMenu(false); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
 }
 
 /* ---------- Lightbox galerie ---------- */
