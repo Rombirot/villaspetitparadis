@@ -234,7 +234,9 @@ h2 em,h1 em,h3 em{font-style:italic;color:var(--terracotta)}
 /* ---------- Responsive ---------- */
 @media(max-width:960px){
   .wrap{padding:0 1.4rem}
-  .nav{padding:.75rem 1.1rem;background:var(--creme);box-shadow:0 1px 12px rgba(42,37,32,.06)}
+  .nav{padding:.75rem 1.1rem;background:#faf6ed;background-color:#faf6ed!important;
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+    border-bottom:1px solid rgba(184,84,58,.2);box-shadow:0 2px 14px rgba(42,37,32,.1)}
   .nav__logo{font-size:1.22rem}
   .nav__burger{display:flex}
   .nav__links{position:fixed;top:0;right:0;bottom:0;width:min(82vw,340px);
